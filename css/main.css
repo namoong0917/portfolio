@@ -25,7 +25,7 @@ ol, ul { list-style: none; }
 address, em { font-style: normal; }
 strong { font-weight: normal; }
 /* 벤더프리픽스: 브라우저 제조사를 의미 */
-a { text-decoration: none; color: #ecf0f1; -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1); }
+a { text-decoration: none; color: #fff; -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1); }
 /* iframe으로 외부컨텐츠를 연결했을때
 외부컨텐츠안쪽내용이 우리페이지에 영향을 주지못하도록 가려줌*/
 iframe { overflow: hidden; border: 0; }
@@ -112,26 +112,56 @@ input::-webkit-search-results-decoration {
 
 
 
-#wrap {
-	background: #24252a;
-	/* 모바일단말 최소크기 지정 */
-	min-width: 320px;
-	height: 5000px;
+
+
+/* #fp-nav ul li a span, .fp-slidesNav ul li a span {
+	background: blanchedalmond;
+} */
+/* #fp-nav ul li a.active span {
+	background: blanchedalmond;
+} */
+/* #fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+	background: blanchedalmond;
+} */
+
+
+
+#fp-nav ul li, .fp-slidesNav ul li {	margin: 30px;}
+#fp-nav ul li a, .fp-slidesNav ul li a {
+	/* height: 15px; */
+	/* width: 15px; */
+	/* background: none; */
+	border-radius: 50%;
+	border: 4px solid rgb(213, 215, 238);
 }
+#fp-nav ul li a span {
+	background: #b4b6f9;
+	height: 0;
+}
+
+
 
 #header {
 	position: fixed;
 	width:100%;
 	z-index: 9999;
+	background: #24252a;
+	/* box-shadow: 0 4px 4px -4px #24252a; */
+	box-shadow: 0 50px 100px 50px #24252a;
+}
+#header .inner {
 	height: 100px;
-	padding: 30px 10%;
+	max-width: 1720px;
+	margin: 0 auto;
+	padding: 0 60px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* background: #24252a; */
 }
 
 #header .logo {
+	color: #B4B6F9;
 	padding: 0 25px;
 	border: 1px solid #eee;
 	border-radius: 50px;
@@ -139,57 +169,111 @@ input::-webkit-search-results-decoration {
 }
 #header h1 { line-height: 35px;}
 
-#header .nav_links {
+#header .nav_list {
 	/* list-style: none; */
 	cursor: default;
 }
-#header .nav_links li {
+#header .nav_list li {
 	display: inline-block;
 	padding: 0 30px;
 }
-#header .nav_links li a {
+#header .nav_list li a {
 	transition: all 0.3s ease 0s;
 	font-size: 2.5rem;
 }
-#header .nav_links li a:hover { color: #0088a9; }
-#header .nav_links li.on a { color: #0088a9; font-weight: 700; }
+#header .nav_list li a:hover { color: #8384D6; }
+#header .nav_list li.on a { color: #8384D6; font-weight: 700; }
 #header .contact_btn {
 	padding: 0 25px;
 	line-height: 35px;
 	border: none;
 	border-radius: 50px;
-	background: rgba(0, 136, 169, 1);
+	background: rgba(131, 132, 214, 1);
 	transition: all 0.3s ease 0s;
 }
-#header .contact_btn:hover { background: rgba(0, 136, 169, 0.8);}
+#header .contact_btn:hover { background: rgba(180, 182, 249, 0.8);
+background: rg;}
 
 
 
-.home { height: 100vh; }
-.home .inner {
-	border: 2px solid red;
-	max-width: 1260px;
+.intro .inner {
+	max-width: 1720px;
+	padding: 0 60px;
 	margin: 0 auto;
-	padding: 0 30px;
-	height: 100%;
+}
+.intro .inner .txt_wrap {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	/* display: none; */
+}
+.intro .inner .txt_wrap em {
+	font-size: 3rem;
+	font-weight: 400;
+	line-height: 1.5;
+	position: relative;
+}
+
+.intro .inner .txt_wrap em .blink {
+	position: absolute;
+	right: -4px;
+	top: -3px;
+  animation: blink 0.8s infinite;
+  font-size: 3rem;
+}
+@keyframes blink { to { opacity: 0; } }
+
+.intro .inner .txt_wrap p {
+	color: #B4B6F9;
+	position: relative;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 8rem;
+	line-height: 1.2;
+	font-weight: 700;
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+.intro .inner .txt_wrap p:before {
+	content: 'PORTFOLIO';
+	position: absolute;
+	color: #8384D6;
+	text-shadow: -1px 0 #333, 1px 0 #333, 0 -1px #333, 0 1px #333;
+	bottom: -4px;
+	left: 5px;
+}
+
+.intro .inner .txt_wrap span {
+	display: block;
+	font-weight: 300;
+}
+
+
+.skills .inner {
+	max-width: 1720px;
+	padding: 0 60px;
+	margin: 0 auto;
+}
+.skills .inner h2 {
+	text-align: center;
+	font-size: 5rem;
+	font-weight: 700;
+	text-shadow:
+	/* -1px -1px 1px #B4B6F9, */
+	2px 2px 1px #8384D6;
+	margin-bottom: 20px;
+}
+.skills .inner .skills_box {
+	border: 1px solid red;
+	background: darkslateblue;
+	border-radius: 50px;
+}
+.skills .inner .skills_box ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+.skills .inner .skills_box li{
+	padding: 30px;
 
-.home .inner p {
-	font-size: 3rem;
-	/* text-align: center; */
-}
-
-
-
-.skills {
-	background: blue;
-}
-.work {
-	background: pink;
-}
-.about {
-	background: yellow;
 }

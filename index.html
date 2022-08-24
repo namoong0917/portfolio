@@ -5,31 +5,113 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
-  <!-- <meta name="description" content="신선하고 건강한 글로벌 NO.1 샌드위치 브랜드, 써브웨이"> -->
+  <meta property="og:title" content="조남웅 웹퍼블리셔 포트폴리오">
+  <meta property="og:description" content="신입 웹퍼블리셔 조남웅 개인 포트폴리오 사이트 입니다.">
+  <!-- <meta property="og:image" content="share.jpg"> -->
+  <meta property="og:url" content="cnw0917.dothome.co.kr">
   <meta property="og:type" content="website">
-  <!-- <meta property="og:title" content="SUBWAY 써브웨이"> -->
-  <!-- <meta property="og:url" content="http://ossamuiux.com/subway"> -->
-  <!-- <meta property="og:image" content="http://ossamuiux.com/subway/images/subway_og.png"> -->
-  <!-- <meta property="og:description" content="신선하고 건강한 글로벌 NO.1 샌드위치 브랜드, 써브웨이"> -->
-  <title>조남웅 포트폴리오</title>
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-  <!-- 추가필요 -->
-  <!-- <link rel="apple-touch-icon" href="images/subway_og.png"> -->
+  <!-- <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content=""> -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>조남웅 웹퍼블리셔 포트폴리오</title>
+  <!-- <link rel="icon" href="favicon.ico"> -->
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/jquery-ui.min.css">
-  <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+  <link rel="stylesheet" href="css/jquery.fullPage.css"></link>
   <link rel="stylesheet" href="css/main.css?v=<?php echo time(); ?>">
-  <link rel="stylesheet" href="css/jquery.fullPage.css?v=<?php echo time(); ?>"></link>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.fullPage.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <!-- <script src="js/swiper.min.js"></script> -->
-  <script src="js/ui_common.js?v=<?php echo time(); ?>"></script>
+  <script src="js/main.js?v=<?php echo time(); ?>"></script>
 </head>
 
 <body>
   <div id="skip_navi">
+    <a href="#container">본문바로가기</a>
+  </div>
+  <header id="header">
+    <div class="inner">
+      <h1 class="logo"> Cho Namwoong</h1>
+      <nav>
+        <ul class="nav_list">
+          <li data-menuanchor="intro"><a href="#intro">INTRO</a></li>
+          <li data-menuanchor="skills"><a href="#skills">SKILLS</a></li>
+          <li data-menuanchor="work"><a href="#work">WORK</a></li>
+          <li data-menuanchor="about"><a href="#about">ABOUT</a></li>
+        </ul>
+      </nav>
+      <a data-menuanchor="contact" class="contact_btn" href="#contact">CONTACT</a>
+    </div>
+  </header>
+    <main id="fullpage">
+      <section class="section intro">
+        <h2 class="blind">intro</h2>
+        <div class="inner">
+          <div class="txt_wrap">
+            <p><span>WOONG'S</span>PORTFOLIO</p>
+            <em>
+              <!-- 안녕하십니까 배움에 대한 열정을 가진 조남웅 입니다. <br>불평불만 없이 개처럼 일하겠습니다. -->
+              <span class="blink">|</span>
+            </em>
+          </div>
+      </div>
+      </section>
+      <section class="section skills">
+        <div class="inner">
+          <h2>SKILLS</h2>
+          <div class="skills_box">
+            <ul>
+              <li>
+                <span></span>
+                <strong>HTML</strong>
+              </li>
+              <li>
+                <strong>CSS</strong>
+              </li>
+              <li>
+                <strong>Javascript & jQuery</strong>
+              </li>
+              <li>
+                <strong>PHOTOSHOP</strong>
+              </li>
+              <li>
+                <strong>Logic Pro X & Pro Tools</strong>
+              </li>
+              <li>
+                <strong>Final Cut Pro</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section work">
+        <h2>WORK</h2>
+        <div class="slide">
+          <h3>slide 01</h3>
+        </div>
+        <div class="slide">
+          <h3>slide 02</h3>
+        </div>
+        <div class="slide">
+          <h3>slide 03</h3>
+        </div>
+      </section>
+      <section class="section ABOUT">
+        <h3>ABOUT</h3>
+      </section>
+      <section class="section CONTACT">
+        <h3>CONTACT</h3>
+      </section>
+      <footer class="section fp-auto-height">
+        <h2>footer</h2>
+      </footer>
+    </main>
+
+  <!-- <div id="skip_navi">
     <a href="#container">본문바로가기</a>
   </div>
   <div id="wrap">
@@ -45,13 +127,12 @@
       </nav>
       <a class="contact_btn" href="#">CONTACT</a>
     </header>
+
     <div id="container">
 
       <section class="section home">
         <h2 class="blind">Home</h2>
-        <div class="inner">
-            <p>안녕하세요 알잘딱깔센 퍼블리셔 조남웅입니다.</p>
-        </div>
+        
       </section>
       <section class="section skills">
         <h2>skills</h2>
@@ -66,6 +147,6 @@
 
       </footer>
     </div>
-  </div>
+  </div> -->
 </body>
 </html>
