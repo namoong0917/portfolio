@@ -17,12 +17,12 @@
   <!-- 추가필요 -->
   <!-- <link rel="apple-touch-icon" href="images/subway_og.png"> -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-  <!-- fontawesome 아이콘폰트 -->
-  <!-- <link rel="stylesheet" href="css/all.min.css"> -->
   <link rel="stylesheet" href="css/jquery-ui.min.css">
-  <link rel="stylesheet" href="css/swiper.min.css">
+  <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
   <link rel="stylesheet" href="css/main.css?v=<?php echo time(); ?>">
+  <link rel="stylesheet" href="css/jquery.fullPage.css?v=<?php echo time(); ?>"></link>
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.fullPage.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <!-- <script src="js/swiper.min.js"></script> -->
   <script src="js/ui_common.js?v=<?php echo time(); ?>"></script>
@@ -32,7 +32,40 @@
   <div id="skip_navi">
     <a href="#container">본문바로가기</a>
   </div>
-  <h1>안녕하세요 포트폴리오 제작중입니다.알잘딱깔센중</h1>
-</body>
+  <div id="wrap">
+    <header id="header">
+      <h1 class="logo">Cho Namwoong</h1>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#">WORK</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+      </nav>
+      <a class="contact_btn" href="#">CONTACT</a>
+    </header>
+    <div id="container">
 
+      <section class="section home">
+        <h2 class="blind">Home</h2>
+        <div class="inner">
+            <p>안녕하세요 알잘딱깔센 퍼블리셔 조남웅입니다.</p>
+        </div>
+      </section>
+      <section class="section skills">
+        <h2>skills</h2>
+      </section>
+      <section class="section work">
+        <h2>work</h2>
+      </section>
+      <section class="section about">
+        <h2>about</h2>
+      </section>
+      <footer id="section footer">
+
+      </footer>
+    </div>
+  </div>
+</body>
 </html>

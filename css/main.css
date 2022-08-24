@@ -25,7 +25,7 @@ ol, ul { list-style: none; }
 address, em { font-style: normal; }
 strong { font-weight: normal; }
 /* 벤더프리픽스: 브라우저 제조사를 의미 */
-a { text-decoration: none; color: #666; -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1); }
+a { text-decoration: none; color: #ecf0f1; -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1); }
 /* iframe으로 외부컨텐츠를 연결했을때
 외부컨텐츠안쪽내용이 우리페이지에 영향을 주지못하도록 가려줌*/
 iframe { overflow: hidden; border: 0; }
@@ -59,8 +59,8 @@ body, input, button, select, textarea, table {
 	font-family: 'Noto Sans KR', '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo', sans-serif;
 	font-size: 1.6rem;
 	/* font-weight 기본값은 400이므로 잡아줌 */
-	font-weight: 400;
-	color: #666;
+	font-weight: 500;
+	color: #ecf0f1;
 	/* letter-spacing: -0.03em; */
 	/* 한글, 영문 한단어씩 내려가게 */
 	/* word-break: keep-all; */
@@ -104,6 +104,92 @@ input::-webkit-search-results-decoration {
 }
 
 
+/* height 100vh 공통 */
+.skills, .work, .about {
+	height: 100vh;
+}
 
 
 
+
+#wrap {
+	background: #24252a;
+	/* 모바일단말 최소크기 지정 */
+	min-width: 320px;
+	height: 5000px;
+}
+
+#header {
+	position: fixed;
+	width:100%;
+	z-index: 9999;
+	height: 100px;
+	padding: 30px 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* background: #24252a; */
+}
+
+#header .logo {
+	padding: 0 25px;
+	border: 1px solid #eee;
+	border-radius: 50px;
+	cursor: default;
+}
+#header h1 { line-height: 35px;}
+
+#header .nav_links {
+	/* list-style: none; */
+	cursor: default;
+}
+#header .nav_links li {
+	display: inline-block;
+	padding: 0 30px;
+}
+#header .nav_links li a {
+	transition: all 0.3s ease 0s;
+	font-size: 2.5rem;
+}
+#header .nav_links li a:hover { color: #0088a9; }
+#header .nav_links li.on a { color: #0088a9; font-weight: 700; }
+#header .contact_btn {
+	padding: 0 25px;
+	line-height: 35px;
+	border: none;
+	border-radius: 50px;
+	background: rgba(0, 136, 169, 1);
+	transition: all 0.3s ease 0s;
+}
+#header .contact_btn:hover { background: rgba(0, 136, 169, 0.8);}
+
+
+
+.home { height: 100vh; }
+.home .inner {
+	border: 2px solid red;
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 0 30px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home .inner p {
+	font-size: 3rem;
+	/* text-align: center; */
+}
+
+
+
+.skills {
+	background: blue;
+}
+.work {
+	background: pink;
+}
+.about {
+	background: yellow;
+}
