@@ -3,6 +3,7 @@ $(function () {
     //options here
     anchors: ['intro', 'skills', 'work', 'about', 'contact'],
     navigation: true,
+    // scrollBar: true,
     navigationTooltips: [
       'INTRO',
       'SKILLS',
@@ -54,4 +55,28 @@ $(function () {
     }
   }
   setInterval(typing, 100);
+
+  // 차트
+  var chart = $('.chart');
+
+  chart.each(function () {
+    var item = $(this);
+    var title = item.find('h2');
+    var targetNum = title.attr('data-num');
+    var circle = item.find('circle');
+
+    $({ rate: 0 }).animate(
+      { rate: targetNum },
+      {
+        duration: 1500,
+        progress: function () {
+          var now = this.rate;
+          var amount = 630 - (630 * now) / 100;
+          console.log(now);
+          title.text(Math.floor(now));
+          circle.css({ strokeDashoffset: amount });
+        },
+      }
+    );
+  });
 });

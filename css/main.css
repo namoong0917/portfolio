@@ -254,7 +254,7 @@ background: rg;}
 	padding: 0 60px;
 	margin: 0 auto;
 }
-.skills .inner h2 {
+.skills .inner>h2 {
 	text-align: center;
 	font-size: 5rem;
 	font-weight: 700;
@@ -263,7 +263,7 @@ background: rg;}
 	2px 2px 1px #8384D6;
 	margin-bottom: 20px;
 }
-.skills .inner .skills_box {
+/* .skills .inner .skills_box {
 	border: 1px solid red;
 	background: darkslateblue;
 	border-radius: 50px;
@@ -275,5 +275,63 @@ background: rg;}
 }
 .skills .inner .skills_box li{
 	padding: 30px;
+} */
 
+.charts_wrap {
+	/* width: 80%; */
+	background: darkslateblue;
+	border-radius: 50px;
+	margin: 3rem auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap:wrap;
+}
+.charts_wrap .chart {
+	margin: 0 20px;
+	position: relative;
+}
+.charts_wrap .chart h2 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	color: #8384D6;
+}
+.charts_wrap .chart svg {
+	width: 220px;
+	height: 220px;
+}
+circle {
+	fill: #ebebeb;
+	stroke-width: 20;
+	stroke-dasharray: 628;
+	stroke-dashoffset: 628;
+	/* animation: line 2s forwards; */
+	transform: rotate(-90deg);
+	transform-origin: 50% 50%;
+	stroke-linecap: round;
+	/* transition: fill 4s 0.1s; */
+}
+@keyframes line {
+	from {stroke-dashoffset: 628;}
+	to {stroke-dashoffset: 0;}
+}
+.charts_wrap .chart:nth-child(1) circle {
+	stroke: #e44f26;
+}
+.charts_wrap .chart:nth-child(2) circle {
+	stroke: blue;
+}
+.charts_wrap .chart:nth-child(3) circle {
+	stroke: yellow;
+}
+.charts_wrap .chart:nth-child(4) circle {
+	stroke: plum;
+}
+.charts_wrap .chart:nth-child(5) circle {
+	stroke: plum;
+}
+.charts_wrap .chart:nth-child(6) circle {
+	stroke: plum;
 }
