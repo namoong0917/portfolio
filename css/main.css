@@ -279,16 +279,16 @@ background: rg;}
 .skills .skills_box {
 	position: relative;
 }
-@keyframes move {
+/* @keyframes move {
 	from{
-		/* bottom: 100px; */
-		/* opacity: 0; */
+		bottom: 100px;
+		opacity: 0;
 	}
 	to{
-		/* bottom: 0; */
-		/* opacity: 1; */
+		bottom: 0;
+		opacity: 1;
 	}
-}
+} */
 .skills .charts_wrap {
 	/* width: 80%; */
 	background: darkslateblue;
