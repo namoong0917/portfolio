@@ -56,6 +56,7 @@ $(function () {
   }
   setInterval(typing, 100);
 
+  // 차트 move
   // 차트
   var chart = $('.chart');
 
