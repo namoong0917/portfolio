@@ -20,10 +20,12 @@
   <!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/jquery-ui.min.css">
-  <link rel="stylesheet" href="css/jquery.fullPage.css"></link>
+  <link rel="stylesheet" href="css/jquery.fullPage.css">
+  </link>
   <link rel="stylesheet" href="css/main.css?v=<?php echo time(); ?>">
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.fullPage.js"></script>
+  <script src="js/scrolloverflow.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <!-- <script src="js/swiper.min.js"></script> -->
   <script src="js/main.js?v=<?php echo time(); ?>"></script>
@@ -35,7 +37,7 @@
   </div>
   <header id="header">
     <div class="inner">
-      <h1 class="logo">Cho Namwoong</h1>
+      <h1>Cho Namwoong</h1>
       <nav>
         <ul class="nav_list">
           <li data-menuanchor="intro"><a href="#intro">INTRO</a></li>
@@ -47,62 +49,89 @@
       <a data-menuanchor="contact" class="contact_btn" href="#contact">CONTACT</a>
     </div>
   </header>
-    <main id="fullpage">
-      <section class="section intro">
-        <h2 class="blind">intro</h2>
-        <div class="inner">
-          <div class="txt_wrap">
-            <p><span>WOONG'S</span>PORTFOLIO</p>
-            <em>
-              <!-- 안녕하십니까 배움에 대한 열정을 가진 조남웅 입니다. <br>불평불만 없이 개처럼 일하겠습니다. -->
-              <span class="blink">|</span>
-            </em>
-          </div>
+  <div id="fullpage">
+    <section class="section intro">
+      <h2 class="blind">intro</h2>
+      <div class="inner">
+        <div class="txt_wrap">
+          <p><span>WOONG'S</span>PORTFOLIO</p>
+          <em>
+            <!-- 안녕하십니까 배움에 대한 열정을 가진 조남웅 입니다. <br>불평불만 없이 개처럼 일하겠습니다. -->
+            <span class="blink">|</span>
+          </em>
+        </div>
       </div>
-      </section>
-      <section class="section skills">
-        <div class="inner">
-          <h2>SKILLS</h2>
-          <div class="skills_box">
-            <div class="charts_wrap">
-              <div class="chart">
-                <h2 data-num="95">0</h2>
-                <svg>
-                  <circle cx="110" cy="110" r="100"></circle>
-                </svg>
-              </div>
-              <div class="chart">
-                <h2 data-num="90">0</h2>
-                <svg>
-                  <circle cx="110" cy="110" r="100"></circle>
-                </svg>
-              </div>
-              <div class="chart">
-                <h2 data-num="20">0</h2>
-                <svg>
-                  <circle cx="110" cy="110" r="100"></circle>
-                </svg>
-              </div>
-              <div class="chart">
-                <h2 data-num="20">0</h2>
-                <svg>
-                  <circle cx="110" cy="110" r="100"></circle>
-                </svg>
-              </div>
-              <div class="chart">
-                <h2 data-num="20">0</h2>
-                <svg>
-                  <circle cx="110" cy="110" r="100"></circle>
-                </svg>
-              </div>
-              <div class="chart">
-                <h2 data-num="20">0</h2>
-                <svg>
-                  <circle cx="110" cy="110" r="100"></circle>
-                </svg>
-              </div>
+    </section>
+    <section class="section skills">
+      <div class="inner">
+        <h2>SKILLS</h2>
+        <!-- skills_box 포지션후 튀어오르는효과줄때 사용하려 냅둠 -->
+        <div class="skills_box">
+          <div class="charts_wrap">
+            <div class="chart">
+              <strong>HTML</strong>
+              <h2 data-num="90">0</h2>
+              <svg>
+                <circle cx="80" cy="80" r="70"></circle>
+              </svg>
+              <p>웹 표준, 접근성을 준수하며<br>시멘틱 마크업을 통한<br>의미있는 구조 설계</p>
             </div>
-            <!-- <ul>
+            <div class="chart">
+              <strong>CSS</strong>
+              <h2 data-num="90">0</h2>
+              <svg>
+                <circle cx="80" cy="80" r="70"></circle>
+              </svg>
+              <p>반응형 &amp; 적응형<br>웹사이트 구축
+                <br>CSS 3.0 &amp; 크로스브라우징</p>
+            </div>
+            <div class="chart">
+              <strong>Javascript</strong>
+              <h2 data-num="60">0</h2>
+              <svg>
+                <circle cx="80" cy="80" r="70"></circle>
+              </svg>
+              <p>기본적인 문법 사용과<br>
+                플러그인 사용이 가능하며<br>
+                제이쿼리를 이용한<br>
+                동적표현이 가능합니다.</p>
+              </div>
+              <div class="chart">
+                <strong>Design Tool</strong>
+                <h2 data-num="80">0</h2>
+                <svg>
+                  <circle cx="80" cy="80" r="70"></circle>
+                </svg>
+                <p>포토샵, 일러스트,<br>
+                  adobe XD, 기본적인 피그마<br>
+                  툴 사용이 가능합니다.</p>
+                </div>
+                <div class="chart">
+                  <strong>Logic Pro X</strong>
+                  <h2 data-num="100">0</h2>
+                  <svg>
+                    <circle cx="80" cy="80" r="70"></circle>
+                  </svg>
+                  <p>사운드 디자인, 믹싱<br>
+                    마스터링, BGM 작편곡<br>
+                    프로툴즈 사용 등<br>
+                    음악작업 가능합니다.
+                  </p>
+                </div>
+                <div class="chart">
+                  <strong>Final Cut Pro</strong>
+                  <h2 data-num="80">0</h2>
+                  <svg>
+                    <circle cx="80" cy="80" r="70"></circle>
+                  </svg>
+                  <p>기본 자연스러운<br>
+                    컷편집이 가능하며<br>
+                    자막 및 기본 효과<br>
+                    삽입이 가능합니다.
+                  </p>
+            </div>
+          </div>
+          <!-- <ul>
               <li>
                 <span></span>
                 <strong>HTML</strong>
@@ -123,31 +152,31 @@
                 <strong>Final Cut Pro</strong>
               </li>
             </ul> -->
-          </div>
         </div>
-      </section>
-      <section class="section work">
-        <h2>WORK</h2>
-        <div class="slide">
-          <h3>slide 01</h3>
-        </div>
-        <div class="slide">
-          <h3>slide 02</h3>
-        </div>
-        <div class="slide">
-          <h3>slide 03</h3>
-        </div>
-      </section>
-      <section class="section ABOUT">
-        <h3>ABOUT</h3>
-      </section>
-      <section class="section CONTACT">
-        <h3>CONTACT</h3>
-      </section>
-      <footer class="section fp-auto-height">
-        <h2>footer</h2>
-      </footer>
-    </main>
+      </div>
+    </section>
+    <section class="section work">
+      <h2>WORK</h2>
+      <div class="slide">
+        <h3>slide 01</h3>
+      </div>
+      <div class="slide">
+        <h3>slide 02</h3>
+      </div>
+      <div class="slide">
+        <h3>slide 03</h3>
+      </div>
+    </section>
+    <section class="section ABOUT">
+      <h3>ABOUT</h3>
+    </section>
+    <section class="section CONTACT">
+      <h3>CONTACT</h3>
+    </section>
+    <footer class="section fp-auto-height">
+      <h2>footer</h2>
+    </footer>
+  </div>
 
   <!-- <div id="skip_navi">
     <a href="#container">본문바로가기</a>
@@ -187,4 +216,5 @@
     </div>
   </div> -->
 </body>
+
 </html>
