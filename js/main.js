@@ -102,8 +102,26 @@ $(function () {
   });
 
   // 스크롤 애니메이션 (수정필요)
-  window.addEventListener('scroll', function () {
-    let value = window.scrollY;
-    console.log('scrollY', value);
+  // window.addEventListener('scroll', function () {
+  //   let value = window.scrollY;
+  //   console.log('scrollY', value);
+  // });
+
+  // WORK 탭메뉴
+  $('.work .tab_list a').on('click', function (e) {
+    // li클릭시 안쪽 a부터 이벤트가 발생하여 상위요소로 이벤트가 전파(버블링)되며 a의 기본이벤트가 발생하면 페이지 위로 올라감, 기본이벤트를 막으려면 e(이벤트객체) 매개변수를 이용
+    e.preventDefault();
+
+    // 이벤트리스너 안에서 $(this)는 이벤트발생대상을 의미
+    $(this).addClass('active').siblings().removeClass('active');
+
+    // A그룹중 클릭한 li의 순서값
+    var idx = $(this).index();
+
+    // B그룹과 연결(탭내용이 슬라이더일경우)
+    // $('.work .menu_slider_wrap').eq(idx).addClass('active').siblings().removeClass('active');
+
+    // B그룹과 연결(탭내용이 슬라이더가 아닐경우)
+    $('.work .work_list li').eq(idx).show().siblings().hide();
   });
 });
