@@ -156,9 +156,10 @@ input::-webkit-search-results-decoration {
 	width:100%;
 	z-index: 9999;
 	background: #24252a;
+	border-bottom: 1px solid #575962;
 	/* box-shadow: 0 4px 4px -4px #24252a; */
 	/* box-shadow: 0 50px 100px 50px #24252a; */
-	box-shadow: 0 50px 50px 0px #24252a;
+	/* box-shadow: 0 50px 50px 0px #24252a; */
 }
 #header .inner {
 	height: 100px;
@@ -254,6 +255,9 @@ input::-webkit-search-results-decoration {
 }
 
 .intro .inner .txt_wrap span { display: block; }
+
+
+
 
 .skills .inner {
 	max-width: 1720px;
@@ -379,7 +383,7 @@ input::-webkit-search-results-decoration {
 	background: url(../images/baskin_mobile.png) no-repeat top/cover;
 }
 .work .work_list li:nth-child(3) {
-	background: url(../images/baskin_pc.png) no-repeat center/cover;
+	background: url(../images/baskin_pc.png) no-repeat top/cover;
 }
 .work .work_list .txt_wrap {
 	padding: 40px 20px;
@@ -428,6 +432,28 @@ input::-webkit-search-results-decoration {
 
 
 
+.about .inner {
+	max-width: 1720px;
+	padding: 0 60px;
+	margin: 0px auto;
+}
+
+.about .about_wrap {
+	background: #46484F;
+	border-radius: 50px;
+	display: flex;
+}
+.about .about_wrap img {
+	border-radius: 50px;
+	width: 20%;
+	
+}
+
+
+
+
+
+
 
 
 
@@ -437,12 +463,12 @@ input::-webkit-search-results-decoration {
 /* ########## 요소별 분기점 추가 ########## */
 
 /* 헤더그림자 */
-@media (max-width: 1566px){
+/* @media (max-width: 1566px){
 	#header {
 		box-shadow: none;
-		border-bottom: 1px solid #575962;
+		
 	}
-}
+} */
 
 
 
@@ -505,7 +531,7 @@ input::-webkit-search-results-decoration {
 		display: none;
 	}
 	#header .inner {
-		padding: 0 15px;
+		padding: 0 30px;
 		height: 60px;
 	}
 	/* #header .contact_btn {} */
