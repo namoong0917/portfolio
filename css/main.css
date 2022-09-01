@@ -109,6 +109,9 @@ input::-webkit-search-results-decoration {
 	/* height: 100vh; */
 }
 
+/* 섹션 공통 */
+.section .inner { max-width: 1720px; padding: 100px 60px; margin: 0px auto; }
+
 /* 제목 공통 */
 .section .inner>h2 {
 	text-align: center;
@@ -201,18 +204,15 @@ input::-webkit-search-results-decoration {
 	line-height: 35px;
 	border: none;
 	border-radius: 50px;
-	background: rgba(131, 132, 214, 1);
+	background: #8384d6;
 	transition: all 0.3s ease 0s;
 }
 #header .contact_btn:hover { background: rgba(180, 182, 249, 0.8);}
 
 
 
-.intro .inner {
-	max-width: 1720px;
-	padding: 0 60px;
-	margin: 0 auto;
-}
+
+
 .intro .inner .txt_wrap {
 	text-align: center;
 	display: flex;
@@ -258,12 +258,6 @@ input::-webkit-search-results-decoration {
 
 
 
-
-.skills .inner {
-	max-width: 1720px;
-	padding: 100px 60px;
-	margin: 0 auto;
-}
 
 
 
@@ -342,11 +336,9 @@ input::-webkit-search-results-decoration {
 } */
 
 
-.work .inner {
-	max-width: 1720px;
-	padding: 100px 60px;
-	margin: 0 auto;
-}
+
+
+
 .work .inner .tab_list {
 	text-align: center;
 	cursor: default;
@@ -356,7 +348,7 @@ input::-webkit-search-results-decoration {
 	font-size: 2.4rem;
 	padding: 4px 25px;
 	border-radius: 50px;
-	background: rgba(131, 132, 214, 1);
+	background: #8384d6;
 	transition: all 0.3s ease 0s;
 	margin: 0 20px;
 }
@@ -417,7 +409,7 @@ input::-webkit-search-results-decoration {
 }
 .work .work_list .txt_wrap .btn_more {
 	display: inline-block;
-	background: rgba(131, 132, 214, 1);
+	background: #8384d6;
 	padding: 10px 40px;
 	border-radius: 50px;
 	margin-top: 20px;
@@ -430,31 +422,180 @@ input::-webkit-search-results-decoration {
 
 
 
-
-
-.about .inner {
-	max-width: 1720px;
-	padding: 0 60px;
-	margin: 0px auto;
-}
-
-.about .about_wrap {
+.about .info_wrap {
+	padding: 30px;
 	background: #46484F;
 	border-radius: 50px;
 	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
-.about .about_wrap img {
+.about .info_wrap .left_area img {
+	border-radius: 50%;
+	max-width: 300px;
+	/* margin-right: 50px; */
+}
+.about .left_area { text-align: center; }
+.about .left_area .txt_wrap { margin-top: 10px; line-height: 1.8;  }
+.about .left_area .txt_wrap strong {
+	font-size: 2.6rem;
+	color: #dedfff;
+}
+.about .right_area {
+	margin-left: 30px;
+	line-height: 1.5;
+}
+.about .right_area .text_wrap { margin-left: 10px; }
+
+.about .right_area strong {
+	/* text-shadow: 2px 2px 1px #8384d6; */
+	display: block;
+	font-size: 2.6rem;
+	margin-bottom: 10px;
+	color: #dedfff;
+}
+.about .right_area .info_center {
+	margin: 30px 0;
+}
+.about .right_area .info_center p:nth-child(odd) {
+	margin: 10px 0;
+}
+
+.contact .inner {
+	max-width: 1720px;
+	padding: 100px 60px;
+	margin: 0px auto;
+}
+
+.contact .text_wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.contact .text_wrap strong {
+	font-size: 4rem;
+	font-weight: 700;
+	color: #dedfff;
+	margin-bottom: 30px;
+}
+.contact .text_wrap .phone2 {
+	margin: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 토스트1 */
+/* 번호 클립보드 복사, 메일 */
+.ip_hidden {
+	/* position: absolute; */
+	/* top: -9999em; */
+	/* left: 0; */
+	display: none;
+	user-select: none;
+	font-size: 1rem;
+}
+.mail:hover {color: #8384d6; display: inline;}
+.phone {
+	cursor: pointer;
+	display: block;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.phone:hover {color: #8384d6;}
+.phone p {display: inline;}
+/* .phone img { width: 24px; margin-left: 85px; } */
+
+.kakao {
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+}
+.kakao:hover {color: #8384d6;}
+.kakao p {display: inline-block;}
+/* .kakao img { width: 24px; margin-left: 120px; } */
+#toast {
+	cursor: default;
+	position: fixed;
+	left: 50%;
+	padding: 15px 20px;
+	transform: translate(-50%, 10px);
 	border-radius: 50px;
-	width: 20%;
-	
+	overflow: hidden;
+	font-size: 2rem;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .5s, visibility .5s, transform .5s;
+	background: rgba(180, 182, 249, 1);
+	color: #fff;
+	z-index: 9999;
+}
+#toast.reveal {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(-50%, 0);
 }
 
 
 
 
 
+/* 토스트2 */
+.phone2 {
+	cursor: pointer;
+	display: block;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.phone2:hover {color: #8384d6;}
+.phone2 p {display: inline;}
+/* .phone img { width: 24px; margin-left: 85px; } */
+
+.kakao2 {
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+}
+.kakao2:hover {color: #8384d6;}
+.kakao2 p {display: inline-block;}
+#toast2 {
+	cursor: default;
+	position: fixed;
+	left: 50%;
+	bottom: -380%;
+	padding: 15px 20px;
+	transform: translate(-50%, 10px);
+	border-radius: 50px;
+	overflow: hidden;
+	font-size: 2rem;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .5s, visibility .5s, transform .5s;
+	background: rgba(180, 182, 249, 1);
+	color: #fff;
+	z-index: 9999;
+}
+#toast2.reveal {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(-50%, 0);
+}
 
 
+#footer { padding: 10px; }
+#footer p { text-align: center; }
 
 
 
@@ -500,13 +641,15 @@ input::-webkit-search-results-decoration {
 		/* font-size: 2rem; */
 	}
 
+
 	.work .work_list li {
 		width: 100%;
 	}
-
 	.work .work_list {
 		grid-template-columns: 1fr;
 	}
+
+	.about .info_wrap img {max-width: 220px;}
 }
 
 
@@ -527,6 +670,12 @@ input::-webkit-search-results-decoration {
 
 /* 모바일 분기점 */
 @media (max-width: 767px) {
+	/* 섹션 공통 */
+	.section .inner {
+		padding: 60px 30px;
+	}
+
+
 	#fp-nav ul, .fp-slidesNav ul {
 		display: none;
 	}
@@ -540,9 +689,6 @@ input::-webkit-search-results-decoration {
 	}
 
 
-	.intro .inner {
-		padding: 0 30px;
-	}
 	.intro .inner .txt_wrap p {
 		font-size: 5rem;
 	}
@@ -551,22 +697,43 @@ input::-webkit-search-results-decoration {
 	}
 
 
-	.skills .inner {
-		padding: 70px 30px;
-	}
 	.skills .charts_wrap {
 		padding: 0 15px;
 	}
 	.skills .charts_wrap .chart {
 		margin: 0 15px;
 	}
-	
 
-	.work .inner {
-		padding: 70px 30px;
-	}
+
 	.work .work_list .txt_wrap .tag_wrap .tag {
 		margin: 5px 5px;
 	}
 	.work .work_list .txt_wrap p {line-height: 1.8;}
+
+
+	.about .info_wrap {
+		flex-wrap: wrap;
+	}
+	.about .info_wrap img {max-width: 200px;}
+	.about .left_area {
+		margin-bottom: 30px;
+		border-bottom: 1px solid #eee;
+	}
+	.about .right_area {margin-left: 0;}
+
+
+	.contact .text_wrap strong {
+		font-size: 2.4rem;
+	}
+
+	#toast {
+		font-size: 1.6rem;
+		padding: 10px;
+	}
+	#toast2 {
+		font-size: 1.6rem;
+		padding: 10px;
+	}
+
+	
 }

@@ -95,40 +95,40 @@
                 플러그인 사용이 가능하며<br>
                 제이쿼리를 이용한<br>
                 동적표현이 가능합니다.</p>
-              </div>
-              <div class="chart">
-                <strong>Design Tool</strong>
-                <h2 data-num="80">0</h2>
-                <svg>
-                  <circle cx="80" cy="80" r="70"></circle>
-                </svg>
-                <p>포토샵, 일러스트,<br>
-                  adobe XD, 기본적인 피그마<br>
-                  툴 사용이 가능합니다.</p>
-                </div>
-                <div class="chart">
-                  <strong>Logic Pro X</strong>
-                  <h2 data-num="100">0</h2>
-                  <svg>
-                    <circle cx="80" cy="80" r="70"></circle>
-                  </svg>
-                  <p>사운드 디자인, 믹싱<br>
-                    마스터링, BGM 작편곡<br>
-                    프로툴즈 사용 등<br>
-                    음악작업 가능합니다.
-                  </p>
-                </div>
-                <div class="chart">
-                  <strong>Final Cut Pro</strong>
-                  <h2 data-num="80">0</h2>
-                  <svg>
-                    <circle cx="80" cy="80" r="70"></circle>
-                  </svg>
-                  <p>기본 자연스러운<br>
-                    컷편집이 가능하며<br>
-                    자막 및 기본 효과<br>
-                    삽입이 가능합니다.
-                  </p>
+            </div>
+            <div class="chart">
+              <strong>Design Tool</strong>
+              <h2 data-num="80">0</h2>
+              <svg>
+                <circle cx="80" cy="80" r="70"></circle>
+              </svg>
+              <p>포토샵, 일러스트,<br>
+                adobe XD, 기본적인 피그마<br>
+                툴 사용이 가능합니다.</p>
+            </div>
+            <div class="chart">
+              <strong>Logic Pro X</strong>
+              <h2 data-num="100">0</h2>
+              <svg>
+                <circle cx="80" cy="80" r="70"></circle>
+              </svg>
+              <p>사운드 디자인, 믹싱<br>
+                마스터링, BGM 작편곡<br>
+                프로툴즈 사용 등<br>
+                음악작업 가능합니다.
+              </p>
+            </div>
+            <div class="chart">
+              <strong>Final Cut Pro</strong>
+              <h2 data-num="80">0</h2>
+              <svg>
+                <circle cx="80" cy="80" r="70"></circle>
+              </svg>
+              <p>기본 자연스러운<br>
+                컷편집이 가능하며<br>
+                자막 및 기본 효과<br>
+                삽입이 가능합니다.
+              </p>
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@
               <p>
                 - 퍼블리싱 : 100%<br>
                 - 제작 기간 ( 메인 ) : 디자인 2일, 퍼블리싱 5일<br>
-                - 테블릿 UI 추가, 레이아웃 변경, 포인트 컬러 사용
+                - 테블릿 분기점 추가, 레이아웃 변경, 포인트 컬러 사용
               </p>
               <a class="btn_more" href="http://cnw0917.dothome.co.kr/rwd_medicox/" target="_blank">사이트 보기</a>
             </div>
@@ -175,7 +175,9 @@
                 - 제작 기간 ( 메인, 서브 ) : 디자인 3일, 퍼블리싱 5일<br>
                 - 귀여운, 재미
               </p>
-              <a class="btn_more" href="http://cnw0917.dothome.co.kr/m_baskin" onClick="window.open(this.href, 'resizable', 'width=400, height=728'); return false;" target="_blank">사이트 보기</a>
+              <a class="btn_more" href="http://cnw0917.dothome.co.kr/m_baskin"
+                onClick="window.open(this.href, 'resizable', 'width=400, height=728'); return false;"
+                target="_blank">사이트 보기</a>
             </div>
           </li>
           <li>
@@ -198,63 +200,77 @@
         </ul>
       </div>
     </section>
-
     <section class="section about">
       <div class="inner">
         <h2>ABOUT</h2>
-        <div class="about_wrap">
+        <div class="info_wrap">
+          <div class="left_area">
             <img src="images/CNW.jpg" alt="조남웅">
-          <div class="right_area">
-            <p>하이</p>
+            <div class="txt_wrap">
+              <strong>조남웅</strong>
+              <p>1993.09.17</p>
+            </div>
           </div>
+          <div class="right_area">
+              <strong>기본정보</strong>
+              <div class="text_wrap">
+                <p>주소 : 도봉구 쌍문동<br></p>
+                <a class="mail" href="mailto:namoong0917@gmail.com" target="_blank">메일 : namoong0917@gmail.com</a>
+                <a class="phone" href="tel:010-8822-9636">
+                    <p>핸드폰 : 010-8822-9636</p>
+                    <img src="images/round_content_copy_white_24dp.png" alt="복사">
+                  </a>
+                <input id="phone" class="ip_hidden" type="text" value="010-8822-9636" readonly>
+                <div class="kakao">
+                  <p>카톡 : milktree123</p>
+                  <img src="images/round_content_copy_white_24dp.png" alt="복사">
+                </div>
+                <input id="kakao" class="ip_hidden" type="text" value="milktree123" readonly>
+              </div>
+
+            <div class="info_center">
+              <strong>지키겠습니다.</strong>
+              <div class="text_wrap">
+                <p>- 'Semantic Markup'을 준수합니다.<br></p>
+                <p>- 웹 표준 및 웹 접근성, 마크업 검사를 합니다.</p>
+                <p>- 한국형 웹 콘텐츠 접근성 지침 ( KWCAG )을 지키겠습니다.</p>
+                <p>- 반응형 &amp; 적응형에 대한 이해와 크로스 브라우징 이슈에 대응합니다.</p>
+                <p>- 회사 생활이며 인생이며 더 나은 사람이 되기 위해 HTML, CSS,<br>javascript, Jquery 등 다양한 웹페이지를 분석하며 공부해 익히겠습니다.</p>
+              </div>
+            </div>
+              <strong>교육</strong>
+              <div class="text_wrap">
+                <p>[2022. 03 ~ 2022. 08] : 더조은아카데미학원</p>
+              </div>
+          </div>
+          <div id="toast"></div>
         </div>
       </div>
     </section>
-    <section class="section CONTACT">
-      <h2>CONTACT</h2>
+    <section class="section contact">
+      <div class="inner">
+        <h2>CONTACT</h2>
+          <div class="text_wrap">
+            <strong>감사합니다 행복한 하루 되세요~</strong>
+            <a class="mail" href="mailto:namoong0917@gmail.com" target="_blank">메일 : namoong0917@gmail.com</a>
+            <a class="phone2" href="tel:010-8822-9636">
+                <p>핸드폰 : 010-8822-9636</p>
+                <img src="images/round_content_copy_white_24dp.png" alt="복사">
+              </a>
+            <input id="phone2" class="ip_hidden" type="text" value="010-8822-9636" readonly>
+            <div class="kakao2">
+              <p>카톡 : milktree123</p>
+              <img src="images/round_content_copy_white_24dp.png" alt="복사">
+            </div>
+            <input id="kakao2" class="ip_hidden" type="text" value="milktree123" readonly>
+            <div id="toast2"></div>
+          </div>
+        </div>
     </section>
-    <footer class="section fp-auto-height">
-      <h2>footer</h2>
+    <footer id="footer" class="section fp-auto-height">
+      <p>Copyright 2022 © All Rights Reserved</p>
     </footer>
   </div>
-
-  <!-- <div id="skip_navi">
-    <a href="#container">본문바로가기</a>
-  </div>
-  <div id="wrap">
-    <header id="header">
-      <h1 class="logo">Cho Namwoong</h1>
-      <nav>
-        <ul class="nav_links">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#">WORK</a></li>
-          <li><a href="#">ABOUT</a></li>
-        </ul>
-      </nav>
-      <a class="contact_btn" href="#">CONTACT</a>
-    </header>
-
-    <div id="container">
-
-      <section class="section home">
-        <h2 class="blind">Home</h2>
-        
-      </section>
-      <section class="section skills">
-        <h2>skills</h2>
-      </section>
-      <section class="section work">
-        <h2>work</h2>
-      </section>
-      <section class="section about">
-        <h2>about</h2>
-      </section>
-      <footer id="section footer">
-
-      </footer>
-    </div>
-  </div> -->
 </body>
 
 </html>
