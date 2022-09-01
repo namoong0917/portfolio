@@ -157,8 +157,7 @@ $(function () {
         : (removeToast = setTimeout(function () {
             document.getElementById('toast').classList.remove('reveal');
           }, 1000));
-      toast.classList.add('reveal'),
-        (toast.innerText = '클립보드에 복사 되었습니다.');
+      toast.classList.add('reveal'), (toast.innerText = '복사 되었습니다.');
     }
 
     //pc - phone number copy
@@ -201,10 +200,10 @@ $(function () {
     document.execCommand('copy');
     document.body.removeChild(t);
   }
-  $('.phone').click(function () {
+  $('.phone2').click(function () {
     copyToClipboard('010-8822-9636');
   });
-  $('.kakao').click(function () {
+  $('.kakao2').click(function () {
     copyToClipboard('milktree123');
   });
 
@@ -224,8 +223,7 @@ $(function () {
         : (removeToast = setTimeout(function () {
             document.getElementById('toast2').classList.remove('reveal');
           }, 1000));
-      toast.classList.add('reveal'),
-        (toast.innerText = '클립보드에 복사 되었습니다.');
+      toast.classList.add('reveal'), (toast.innerText = '복사 되었습니다.');
     }
 
     //pc - phone number copy
