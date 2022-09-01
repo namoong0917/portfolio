@@ -533,7 +533,7 @@ input::-webkit-search-results-decoration {
 	transform: translate(-50%, 10px);
 	border-radius: 50px;
 	overflow: hidden;
-	font-size: 0.2rem;
+	font-size: 2rem;
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity .5s, visibility .5s, transform .5s;
@@ -579,7 +579,7 @@ input::-webkit-search-results-decoration {
 	transform: translate(-50%, 10px);
 	border-radius: 50px;
 	overflow: hidden;
-	/* font-size: 0.8rem; */
+	font-size: 2rem;
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity .5s, visibility .5s, transform .5s;
