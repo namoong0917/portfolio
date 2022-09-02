@@ -104,10 +104,6 @@ input::-webkit-search-results-decoration {
 }
 
 
-/* height 100vh 공통 */
-.skills, .work, .about {
-	/* height: 100vh; */
-}
 
 /* 섹션 공통 */
 .section .inner { max-width: 1720px; padding: 100px 60px; margin: 0px auto; }
@@ -173,7 +169,9 @@ input::-webkit-search-results-decoration {
 	justify-content: space-between;
 	align-items: center;
 }
-
+#header .inner .logo {
+	border-radius: 50px;
+}
 #header h1 {
 	font-weight: 700;
 	color: #B4B6F9;
@@ -625,29 +623,13 @@ input::-webkit-search-results-decoration {
 
 /* 태블릿 분기점 */
 @media (max-width: 1200px) {
-	#fp-nav.right {
-		right: 30px;
-	}
-	#header .inner {
-		height: 70px;
-	}
+	#fp-nav.right { right: 30px; }
 
-	#header .nav_list {
-		display: none;
-	}
+	#header .inner { height: 70px; }
+	#header .nav_list { display: none; }
 
-
-	.intro .inner .txt_wrap em {
-		/* font-size: 2rem; */
-	}
-
-
-	.work .work_list li {
-		width: 100%;
-	}
-	.work .work_list {
-		grid-template-columns: 1fr;
-	}
+	.work .work_list li { width: 100%; }
+	.work .work_list { grid-template-columns: 1fr; }
 
 	.about .info_wrap img {max-width: 220px;}
 }
@@ -675,17 +657,24 @@ input::-webkit-search-results-decoration {
 		padding: 60px 30px;
 	}
 
-
 	#fp-nav ul, .fp-slidesNav ul {
 		display: none;
 	}
+
+
 	#header .inner {
 		padding: 0 30px;
 		height: 60px;
 	}
 	/* #header .contact_btn {} */
 	#header h1 {
-		padding: 0 10px;
+		padding: 0 15px;
+		font-size: 1.4rem;
+	}
+	#header .contact_btn {
+		font-size: 1.4rem;
+		padding: 0 15px;
+		/* display: none; */
 	}
 
 
@@ -715,7 +704,7 @@ input::-webkit-search-results-decoration {
 		flex-wrap: wrap;
 		padding: 30px 15px;
 	}
-	.about .info_wrap img {max-width: 200px;}
+	.about .info_wrap .left_area img {max-width: 200px;}
 	.about .left_area {
 		margin-bottom: 30px;
 		border-bottom: 1px solid #eee;
@@ -724,15 +713,15 @@ input::-webkit-search-results-decoration {
 
 
 	.contact .text_wrap strong {
-		font-size: 2.4rem;
+		font-size: 2rem;
 	}
 
 	#toast {
-		font-size: 1.6rem;
+		font-size: 1.2rem;
 		padding: 10px;
 	}
 	#toast2 {
-		font-size: 1.6rem;
+		font-size: 1.2rem;
 		padding: 10px;
 	}
 

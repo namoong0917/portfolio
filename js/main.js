@@ -157,7 +157,8 @@ $(function () {
         : (removeToast = setTimeout(function () {
             document.getElementById('toast').classList.remove('reveal');
           }, 1000));
-      toast.classList.add('reveal'), (toast.innerText = '복사 되었습니다.');
+      toast.classList.add('reveal'),
+        (toast.innerText = '클립보드에 복사 되었습니다.');
     }
 
     //pc - phone number copy
@@ -223,7 +224,8 @@ $(function () {
         : (removeToast = setTimeout(function () {
             document.getElementById('toast2').classList.remove('reveal');
           }, 1000));
-      toast.classList.add('reveal'), (toast.innerText = '복사 되었습니다.');
+      toast.classList.add('reveal'),
+        (toast.innerText = '클립보드에 복사 되었습니다.');
     }
 
     //pc - phone number copy
