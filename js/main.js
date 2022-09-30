@@ -64,9 +64,9 @@ $(function () {
   // });
 
   // 타이핑
-  var content = '안녕하십니까 배움에 대한 열정을 가진 조남웅 입니다.';
-  var text = document.querySelector('.intro .inner .txt_wrap em');
-  var i = 0;
+  const content = '안녕하십니까 배움에 대한 열정을 가진 조남웅 입니다.';
+  const text = document.querySelector('.intro .inner .txt_wrap em');
+  let i = 0;
 
   function typing() {
     if (i < content.length) {
@@ -78,21 +78,21 @@ $(function () {
   setInterval(typing, 100);
 
   // 차트
-  var chart = $('.chart');
+  let chart = $('.chart');
 
   chart.each(function () {
-    var item = $(this);
-    var title = item.find('h2');
-    var targetNum = title.attr('data-num');
-    var circle = item.find('circle');
+    let item = $(this);
+    let title = item.find('h2');
+    let targetNum = title.attr('data-num');
+    let circle = item.find('circle');
 
     $({ rate: 0 }).animate(
       { rate: targetNum },
       {
         duration: 1500,
         progress: function () {
-          var now = this.rate;
-          var amount = 439 - (439 * now) / 100;
+          let now = this.rate;
+          let amount = 439 - (439 * now) / 100;
           // console.log(now);
           title.text(Math.floor(now));
           circle.css({ strokeDashoffset: amount });
@@ -116,7 +116,7 @@ $(function () {
     $(this).addClass('active').siblings().removeClass('active');
 
     // A그룹중 클릭한 li의 순서값
-    var idx = $(this).index();
+    const idx = $(this).index();
 
     // B그룹과 연결(탭내용이 슬라이더일경우)
     // $('.work .menu_slider_wrap').eq(idx).addClass('active').siblings().removeClass('active');
@@ -127,7 +127,7 @@ $(function () {
 
   // 클립보드 복사
   function copyToClipboard(val) {
-    var t = document.createElement('textarea');
+    const t = document.createElement('textarea');
     document.body.appendChild(t);
     t.value = val;
     t.select();
@@ -210,7 +210,7 @@ $(function () {
 
   //about, contact copy
   $(function () {
-    // 토스트 띄우기
+    // 토스트 띄우기 2
     let removeToast;
 
     function toast(string) {
@@ -230,7 +230,7 @@ $(function () {
 
     //pc - phone number copy
 
-    var filter = 'win16|win32|win64|mac';
+    let filter = 'win16|win32|win64|mac';
 
     $('.phone2').click(function (e) {
       if (navigator.platform) {
