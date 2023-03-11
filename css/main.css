@@ -357,7 +357,7 @@ input::-webkit-search-results-decoration {
 	justify-content: space-around;
 	flex-wrap: wrap; */
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	gap: 20px;
 	text-align: center;
 	margin-top: 30px;
@@ -367,7 +367,7 @@ input::-webkit-search-results-decoration {
 	border-radius: 15px;
 }
 .work .work_list li:nth-child(1) {
-	background: url(../images/jasoseol_edit.png) no-repeat center / cover ;
+	background: url(../images/jasoseol_edit.png) no-repeat top / cover ;
 }
 .work .work_list li:nth-child(2) {
 	background: url(../images/curriculum.gif) no-repeat center / cover ;
