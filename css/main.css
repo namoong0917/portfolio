@@ -367,24 +367,27 @@ input::-webkit-search-results-decoration {
 	border-radius: 15px;
 }
 .work .work_list li:nth-child(1) {
-	background: url(../images/jasoseol_edit.png) no-repeat top / cover ;
+	background: url(../images/ai_personality_test.png) no-repeat top / cover ;
 }
 .work .work_list li:nth-child(2) {
-	background: url(../images/curriculum.gif) no-repeat center / cover ;
+	background: url(../images/jasoseol_edit.png) no-repeat top / cover ;
 }
 .work .work_list li:nth-child(3) {
-	background: url(../images/quote_page.gif) no-repeat center / cover ;
+	background: url(../images/curriculum.gif) no-repeat center / cover ;
 }
 .work .work_list li:nth-child(4) {
-	background: url(../images/medicox_rwd.png) no-repeat center/cover;
+	background: url(../images/quote_page.gif) no-repeat center / cover ;
 }
 .work .work_list li:nth-child(5) {
-	background: url(../images/baskin_mobile.png) no-repeat top/cover;
+	background: url(../images/medicox_rwd.png) no-repeat center/cover;
 }
 .work .work_list li:nth-child(6) {
-	background: url(../images/baskin_pc.png) no-repeat top/cover;
+	background: url(../images/baskin_mobile.png) no-repeat top/cover;
 }
 .work .work_list li:nth-child(7) {
+	background: url(../images/baskin_pc.png) no-repeat top/cover;
+}
+.work .work_list li:nth-child(8) {
 	background: url(../images/baskin_pc.png) no-repeat top/cover;
 }
 .work .work_list .txt_wrap {
