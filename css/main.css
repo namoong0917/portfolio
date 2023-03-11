@@ -387,9 +387,7 @@ input::-webkit-search-results-decoration {
 .work .work_list li:nth-child(7) {
 	background: url(../images/baskin_pc.png) no-repeat top/cover;
 }
-.work .work_list li:nth-child(8) {
-	background: url(../images/baskin_pc.png) no-repeat top/cover;
-}
+
 .work .work_list .txt_wrap {
 	padding: 40px 20px;
 	background: rgba(70, 72, 79, 0.95);
