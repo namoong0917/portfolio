@@ -617,7 +617,9 @@ input::-webkit-search-results-decoration {
 
 
 /* ########## 요소별 분기점 추가 ########## */
-
+@media (max-width: 1400px) {
+	.work .work_list { grid-template-columns: 1fr 1fr; }
+}
 /* 헤더그림자 */
 /* @media (max-width: 1566px){
 	#header {
