@@ -115,6 +115,7 @@ input::-webkit-search-results-decoration {
 	font-weight: 700;
 	text-shadow: /* -1px -1px 1px #B4B6F9, */ 2px 2px 1px #8384D6;
 	margin-bottom: 40px;
+	text-transform: uppercase;
 }
 
 
@@ -146,6 +147,7 @@ input::-webkit-search-results-decoration {
 #fp-nav ul li a span {
 	background: #b4b6f9;
 	height: 0;
+	text-indent: -9999px;
 }
 
 
@@ -193,6 +195,7 @@ input::-webkit-search-results-decoration {
 #header .nav_list li a {
 	transition: all 0.3s ease 0s;
 	font-size: 2.5rem;
+	text-transform: uppercase;
 }
 #header .nav_list li a:hover { color: #8384D6; }
 #header .nav_list li.on a { color: #8384D6; font-weight: 700; }
@@ -202,10 +205,12 @@ input::-webkit-search-results-decoration {
 	line-height: 35px;
 	border: none;
 	border-radius: 50px;
-	background: #8384d6;
+	background: #B4B6F9;
+	color: #24252a;
 	transition: all 0.3s ease 0s;
+	text-transform: uppercase;
 }
-#header .contact_btn:hover { background: rgba(180, 182, 249, 0.8);}
+#header .contact_btn:hover { background: #8384D6;}
 
 
 
@@ -373,10 +378,10 @@ input::-webkit-search-results-decoration {
 	background: url(../images/jasoseol_edit.png) no-repeat top / cover ;
 }
 .work .work_list li:nth-child(3) {
-	background: url(../images/curriculum.gif) no-repeat center / cover ;
+	background: url(../images/curriculum.webp) no-repeat center / cover ;
 }
 .work .work_list li:nth-child(4) {
-	background: url(../images/quote_page.gif) no-repeat center / cover ;
+	background: url(../images/quote_page.webp) no-repeat center / cover ;
 }
 .work .work_list li:nth-child(5) {
 	background: url(../images/medicox_rwd.png) no-repeat center/cover;
@@ -420,13 +425,15 @@ input::-webkit-search-results-decoration {
 }
 .work .work_list .txt_wrap .btn_more {
 	display: inline-block;
-	background: #8384d6;
+	background: #B4B6F9;
 	padding: 10px 40px;
 	border-radius: 50px;
 	margin-top: 20px;
-	color: #fff;
+	color: #24252a;
+	font-weight: 700;
+	transition: all 0.3s ease 0s;
 }
-.work .work_list .txt_wrap .btn_more:hover { background: rgba(180, 182, 249, 0.8); }
+.work .work_list .txt_wrap .btn_more:hover { background: #8384D6; }
 
 
 
