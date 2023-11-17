@@ -41,6 +41,7 @@
   <script src="js/jquery-ui.min.js"></script>
   <!-- <script src="js/swiper.min.js"></script> -->
   <script src="js/main.js"></script>
+  <script src="./js/copy_clipboard.js"></script>
 </head>
 
 <body>
@@ -294,16 +295,16 @@
               <div class="text_wrap">
                 <p>주소 : 도봉구 쌍문동<br></p>
                 <a class="mail" href="mailto:namoong0917@gmail.com" target="_blank">메일 : namoong0917@gmail.com</a>
-                <div class="phone">
-                    <p>핸드폰 : 010-8822-9636</p>
+                <div class="phone" id="copyLink1">
+                    <p>핸드폰 : <span id="copyTarget1">010-8822-9636</span></p>
                     <img src="images/round_content_copy_white_24dp.png" alt="복사">
                   </div>
-                <input id="phone" class="ip_hidden" type="text" value="010-8822-9636" readonly>
-                <div class="kakao">
-                  <p>카톡 : milktree123</p>
+                <input id="phone" class="ip_hidden" type="text" value="010-8822-9636" name="phone" readonly>
+                <div class="kakao" id="copyLink2">
+                  <p>카톡 : <span id="copyTarget2">milktree123</span></p>
                   <img src="images/round_content_copy_white_24dp.png" alt="복사">
                 </div>
-                <input id="kakao" class="ip_hidden" type="text" value="milktree123" readonly>
+                <input id="kakao" class="ip_hidden" type="text" value="milktree123" name="kakao" readonly>
               </div>
 
               <div class="history_wrap">
@@ -312,8 +313,8 @@
                   <p>2022.12 배움교육그룹 - 인턴 ( 웹 퍼블리셔 업무 )</p>
                   <p>2022.10 마이비즈니스플랜 - 에이전시 ( 웹페이지 견적서 작업 )</p>
                   <p>2020.08 파인웰 시스템 - 사원 ( 롯데백화점 전산실 )</p>
-                  <p>2018.03 실용음악과 - 졸업</p>
-                  <p>2017.04 네이버 뮤지션리그 - 추천 뮤지션</p>
+                  <!-- <p>2018.03 실용음악과 - 졸업</p> -->
+                  <!-- <p>2017.04 네이버 뮤지션리그 - 추천 뮤지션</p> -->
                 </div>
               </div>
 
@@ -331,7 +332,6 @@
                 <p>2022. 03 ~ 2022. 08 : 더조은아카데미학원</p>
               </div>
           </div>
-          <div id="toast"></div>
         </div>
       </div>
     </section>
@@ -341,23 +341,28 @@
           <div class="text_wrap">
             <!-- <strong>감사합니다.</strong> -->
             <a class="mail" href="mailto:namoong0917@gmail.com" target="_blank">메일 : namoong0917@gmail.com</a>
-            <div class="phone2">
-                <p>핸드폰 : 010-8822-9636</p>
+            <div class="phone2" id="copyLink3">
+                <p>핸드폰 : <span id="copyTarget3">010-8822-9636</span></p>
                 <img src="images/round_content_copy_white_24dp.png" alt="복사">
               </div>
-            <input id="phone2" class="ip_hidden" type="text" value="010-8822-9636" readonly>
-            <div class="kakao2">
-              <p>카톡 : milktree123</p>
+            <input id="phone2" class="ip_hidden" type="text" value="010-8822-9636" name="phone2" readonly>
+            <div class="kakao2" id="copyLink4">
+              <p>카톡 : <span id="copyTarget4">milktree123</span></p>
               <img src="images/round_content_copy_white_24dp.png" alt="복사">
             </div>
-            <input id="kakao2" class="ip_hidden" type="text" value="milktree123" readonly>
+            <input id="kakao2" class="ip_hidden" type="text" value="milktree123" name="kakao2" readonly>
           </div>
         </div>
-        <div id="toast2"></div>
       </section>
     <footer id="footer" class="section fp-auto-height">
       <p>Copyright 2023 © All Rights Reserved</p>
     </footer>
+  </div>
+  <div class="message_wrap">
+    <div id="message1">복사되었습니다.</div>
+    <div id="message2">복사되었습니다.</div>
+    <div id="message3">복사되었습니다.</div>
+    <div id="message4">복사되었습니다.</div>
   </div>
 </body>
 </html>
