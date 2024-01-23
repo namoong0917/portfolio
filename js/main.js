@@ -2,9 +2,8 @@ $(function () {
   $('#fullpage').fullpage({
     //options here
     scrollingspeed: 1000,
-    anchors: ['intro', 'skills', 'work', 'about', 'contact'],
+    anchors: ['intro', 'work', 'about', 'contact'],
     sectionsColor: [
-      '#24252a',
       '#24252a',
       '#24252a',
       '#24252a',
@@ -17,7 +16,6 @@ $(function () {
     // bigSectionsDestination: top,
     navigationTooltips: [
       'INTRO',
-      'SKILLS',
       'WORK',
       'ABOUT',
       'CONTACT',
@@ -26,16 +24,16 @@ $(function () {
     // scrollHorizontally: true,
     navigationPosition: 'right',
 
-    onLeave: function (origin, destination, direction) {
-      if (origin.index == 1) {
-        $('.skills .inner .skills_box').hide();
-      }
-    },
-    afterLoad: function (origin, destination, direction) {
-      if (destination.index == 1) {
-        $('.skills .inner .skills_box').show();
-      }
-    },
+    // onLeave: function (origin, destination, direction) {
+    //   if (origin.index == 1) {
+    //     $('.skills .inner .skills_box').hide();
+    //   }
+    // },
+    // afterLoad: function (origin, destination, direction) {
+    //   if (destination.index == 1) {
+    //     $('.skills .inner .skills_box').show();
+    //   }
+    // },
     // 768이하로 끄기
     // responsiveWidth: 768,
 
@@ -64,7 +62,7 @@ $(function () {
   // });
 
   // 타이핑
-  const content = '안녕하십니까 배움에 대한 열정을 가진 조남웅 입니다.';
+  const content = '배움에 대한 열정을 가진 조남웅 입니다.';
   const text = document.querySelector('.intro .inner .txt_wrap em');
   let i = 0;
 
@@ -78,28 +76,28 @@ $(function () {
   setInterval(typing, 100);
 
   // 차트
-  let chart = $('.chart');
+  // let chart = $('.chart');
 
-  chart.each(function () {
-    let item = $(this);
-    let title = item.find('h2');
-    let targetNum = title.attr('data-num');
-    let circle = item.find('circle');
+  // chart.each(function () {
+  //   let item = $(this);
+  //   let title = item.find('h2');
+  //   let targetNum = title.attr('data-num');
+  //   let circle = item.find('circle');
 
-    $({ rate: 0 }).animate(
-      { rate: targetNum },
-      {
-        duration: 1500,
-        progress: function () {
-          let now = this.rate;
-          let amount = 439 - (439 * now) / 100;
-          // console.log(now);
-          title.text(Math.floor(now));
-          circle.css({ strokeDashoffset: amount });
-        },
-      }
-    );
-  });
+  //   $({ rate: 0 }).animate(
+  //     { rate: targetNum },
+  //     {
+  //       duration: 1500,
+  //       progress: function () {
+  //         let now = this.rate;
+  //         let amount = 439 - (439 * now) / 100;
+  //         // console.log(now);
+  //         title.text(Math.floor(now));
+  //         circle.css({ strokeDashoffset: amount });
+  //       },
+  //     }
+  //   );
+  // });
 
   // 스크롤 애니메이션 (수정필요)
   // window.addEventListener('scroll', function () {
