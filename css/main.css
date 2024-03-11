@@ -384,28 +384,28 @@ input::-webkit-search-results-decoration {
 }
 .work .work_list li { border-radius: 15px; }
 .work .work_list li:nth-child(1) {
-	background: url(../images/glassBead.webp) no-repeat top / cover ;
+	background: url(https://github.com/namoong0917/inthezoo/assets/103318401/27c66f6a-890b-47f5-9b60-1af4bc867d73) no-repeat top / cover ;
 }
 .work .work_list li:nth-child(2) {
-	background: url(../images/ai_personality_test.png) no-repeat top / cover ;
+	background: url(../images/glassBead.webp) no-repeat top / cover ;
 }
 .work .work_list li:nth-child(3) {
-	background: url(../images/jasoseol_edit.png) no-repeat top / cover ;
+	background: url(../images/ai_personality_test.png) no-repeat top / cover ;
 }
 .work .work_list li:nth-child(4) {
-	background: url(../images/curriculum.webp) no-repeat center / cover ;
+	background: url(../images/jasoseol_edit.png) no-repeat top / cover ;
 }
 .work .work_list li:nth-child(5) {
-	background: url(../images/quote_page.webp) no-repeat center / cover ;
+	background: url(../images/curriculum.webp) no-repeat center / cover ;
 }
 .work .work_list li:nth-child(6) {
-	background: url(../images/medicox_rwd.png) no-repeat center/cover;
+	background: url(../images/quote_page.webp) no-repeat center / cover ;
 }
 .work .work_list li:nth-child(7) {
-	background: url(../images/baskin_mobile.png) no-repeat top/cover;
+	background: url(../images/medicox_rwd.png) no-repeat center/cover;
 }
 .work .work_list li:nth-child(8) {
-	background: url(../images/baskin_pc.png) no-repeat top/cover;
+	background: url(../images/baskin_mobile.png) no-repeat top/cover;
 }
 .work .work_list li:nth-child(9) {
 	background: url(../images/baskin_pc.png) no-repeat top/cover;
@@ -452,6 +452,7 @@ input::-webkit-search-results-decoration {
 	transition: all 0.3s ease 0s;
 }
 .work .work_list .txt_wrap .btn_more:hover { background: #8384D6; }
+.work .work_list .txt_wrap .btn_more:last-child {margin-left: 20px;}
 
 
 
